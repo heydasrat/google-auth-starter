@@ -81,4 +81,10 @@ app.get('/auth/google/callback',
     }
 );
 
+// Manuall Routes
+
+import userRoutes from './routes/user.route.js'
+
+app.use("/api/v1/auth", userRoutes)
+
 export { app }
